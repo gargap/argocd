@@ -14,6 +14,11 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 # you can change and delete init password
 
+#command to check the api version
+
+$ kubectl api-versions | grep argo
+argoproj.io/v1alpha1
+
 ```
 </br>
 

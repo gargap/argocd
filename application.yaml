@@ -11,7 +11,7 @@ spec:
         path: dev
     destination:
         server: https://kubernetes.default.svc
-        namespce: myapp  #if namespace does not exist, it will create based on sysncPolicy
+        namespace: myapp  #if namespace does not exist, it will create based on sysncPolicy
 
     syncPolicy:
       syncOptions:
