@@ -7,7 +7,7 @@ spec:
     project: default
     source:
         repoURL: https://github.com/gargap/argocd.git
-        targetRevision: HEAD
+        targetRevision: develop                 ## Update this to the branch or revision you want to watch, e.g., "develop"
         path: dev
     destination:
         server: https://kubernetes.default.svc
