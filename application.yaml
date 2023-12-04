@@ -4,7 +4,7 @@ metadata:
     name: myapp-argo-application
     namespace: argocd
 spec:
-    project: default
+    project: argo-apps
     source:
         repoURL: https://github.com/gargap/argocd.git
         targetRevision: main                 ## Update this to the branch or revision you want to watch, e.g., "develop"
