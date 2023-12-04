@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: guestbook
-  namespace: argocd
+  namespace: myapp
 spec:
   generators:
   - list:
@@ -13,7 +13,7 @@ spec:
     metadata:
       name: '{{cluster}}-guestbook'
     spec:
-      project: my-project
+      project: argo-apps
       source:
         repoURL: https://github.com/gargap/argocd.git
         targetRevision: HEAD
