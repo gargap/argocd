@@ -3,4 +3,4 @@ data:
   env: dev
 kind: ConfigMap
 metadata:
-  name: app-cm
+  name: app-cm-prod
