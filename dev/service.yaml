@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     argocd.argoproj.io/instance: myapp-argo-application-dev
-  name: myapp-new
+  name: myapp-new-dev
   namespace: myapp
 spec:
   ports:
