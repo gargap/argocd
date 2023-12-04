@@ -28,6 +28,15 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 $ kubectl api-versions | grep argo
 argoproj.io/v1alpha1
 
+kubectl apply -f application.yaml 
+application.argoproj.io/myapp-argo-application created
+
+# Application object is created in K8
+
+$ kubectl get application -ALL
+NAMESPACE   NAME                     SYNC STATUS   HEALTH STATUS   L
+argocd      myapp-argo-application   OutOfSync     Healthy
+
 ```
 
 ```bash

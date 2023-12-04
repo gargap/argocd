@@ -17,7 +17,14 @@ spec:
       syncOptions:
       - CreateNamespace=true
 
-      automated:
+      automated: true
         selfHeal: true          # this will override any manual changes done to the cluster. By default it is off.(kubectl changes mnaully done will be overided)
         prune: true             # by default automatic sync will not delete resources if this is not set
                                 # by default sync takes 3 minutes, if you want it to be immidiate, webhooks needs to be defined.
+    health:
+    status: Healthy
+
+    hooks:
+    - before:
+      - sync:
+        - command: ["echo", "Running pre-sync hook"]
