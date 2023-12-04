@@ -5,4 +5,3 @@ data:
 kind: ConfigMap
 metadata:
   name: app-cm
-  namespace: default
