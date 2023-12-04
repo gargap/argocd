@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: argo-apps
+spec:
+  sourceRepos:
+  - https://github.com/gargap/argocd.git
+  clusterResourceWhitelist:
+  - group: "*"
+    kind: "*"
+  destinations:
+  - namespace: myapp
+    server: https://kubernetes.default.svc
