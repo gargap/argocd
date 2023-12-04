@@ -4,4 +4,4 @@ data:
 kind: ConfigMap
 metadata:
   name: app-cm
-  namespace: myapp
+  namespace: guestbook

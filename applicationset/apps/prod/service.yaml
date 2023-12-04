@@ -4,7 +4,7 @@ metadata:
   labels:
     argocd.argoproj.io/instance: myapp-argo-application-prod
   name: myapp-new-prod
-  namespace: myapp
+  namespace: guestbook
 spec:
   ports:
   - port: 8080
