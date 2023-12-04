@@ -8,7 +8,7 @@ spec:
     source:
         repoURL: https://github.com/gargap/argocd.git
         targetRevision: main                 ## Update this to the branch or revision you want to watch, e.g., "develop"
-        path: project-application/prl
+        path: project-application/apps/prl
     destination:
         server: https://kubernetes.default.svc
         namespace: myapp  #if namespace does not exist, it will create based on sysncPolicy
